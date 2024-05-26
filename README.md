@@ -12,11 +12,13 @@ It's depth of features makes it a great project to build and add to my portfolio
 
 ## What Tools Did You Use?
 
-For something like this, `NextJS` would be an ideal framework to use, but I wanted to challenge myself and build it with bare bones `React`. Here's the tech stack:
+Here's the tech stack:
 
-- `React` - the heart and soul of the project
-- `TypeScript` - for prop type safety
-- `DaisyUi` - minimalist component library
-- `Tailwind CSS` - utility CSS classes
-- `ReactRouter` - for client side routing
-- `ReactQuery` - for server state management
+- [React](https://react.dev/) - the heart and soul of the project
+- [TypeScript](https://www.typescriptlang.org/) - for prop type safety
+- [DaisyUi](https://daisyui.com/) - minimalist component library
+- [Tailwind CSS](https://tailwindcss.com/) - utility CSS classes
+- [ReactRouter](https://reactrouter.com/en/main) - for client side routing
+- [ReactQuery](https://tanstack.com/query/latest/docs/framework/react/overview) - for server state management
+- [LiveBlocks](https://liveblocks.io/) - for user collaboration
+- [Fabric](https://github.com/fabricjs/fabric.js) - for canvas manipulation
