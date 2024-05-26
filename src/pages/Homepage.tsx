@@ -1,14 +1,12 @@
-import { Grid, GridColumn } from "@/layouts/Grid";
+import { Room } from "@/liveblocks/Room";
+import { CollaborativeApp } from "@/liveblocks/CollaborativeApp";
 
 const Homepage = () => {
   return (
     <>
-      <Grid>
-        <GridColumn styles="bg-purple-500">
-          Col 1
-        </GridColumn>
-        <GridColumn styles="bg-red-500">Col 2</GridColumn>
-      </Grid>
+      <Room>
+        <CollaborativeApp />
+      </Room>
     </>
   );
 };
