@@ -1,12 +1,13 @@
-import { Room } from "@/liveblocks/Room";
-import { CollaborativeApp } from "@/liveblocks/CollaborativeApp";
+"use client";
+
+import { Live } from "@/features/liveblock";
 
 const Homepage = () => {
   return (
     <>
-      <Room>
-        <CollaborativeApp />
-      </Room>
+      <div className="">
+        <Live />
+      </div>
     </>
   );
 };

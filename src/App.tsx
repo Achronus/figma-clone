@@ -1,10 +1,13 @@
 import "./App.css";
-import Homepage from "./pages/Homepage";
+import { Room } from "@/liveblocks/Room";
+import Homepage from "@/pages/Homepage";
 
 function App() {
   return (
     <>
-      <Homepage />
+      <Room>
+        <Homepage />
+      </Room>
     </>
   );
 }
