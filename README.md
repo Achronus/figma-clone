@@ -16,7 +16,7 @@ Here's the tech stack:
 
 - [React](https://react.dev/) - the heart and soul of the project
 - [TypeScript](https://www.typescriptlang.org/) - for prop type safety
-- [DaisyUi](https://daisyui.com/) - minimalist component library
+- [Shadcn/ui](https://ui.shadcn.com/) - component library
 - [Tailwind CSS](https://tailwindcss.com/) - utility CSS classes
 - [ReactRouter](https://reactrouter.com/en/main) - for client side routing
 - [ReactQuery](https://tanstack.com/query/latest/docs/framework/react/overview) - for server state management
