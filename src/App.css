@@ -1,3 +1,7 @@
 :root {
   margin: 1rem;
 }
+
+.custom-cursor {
+  cursor: url('@/assets/icons/cursor.svg'), auto;
+}

@@ -1,7 +1,24 @@
-import { BaseUserMeta, User } from "@liveblocks/client";
+export enum CursorMode {
+  Hidden,
+  Chat,
+  ReactionSelector,
+  Reaction,
+}
 
-export type Presence = any;
-
-export type LiveCursorProps = {
-  others: readonly User<Presence, BaseUserMeta>[];
-};
+export type CursorState =
+  | {
+      mode: CursorMode.Hidden;
+    }
+  | {
+      mode: CursorMode.Chat;
+      message: string;
+      previousMessage: string | null;
+    }
+  | {
+      mode: CursorMode.ReactionSelector;
+    }
+  | {
+      mode: CursorMode.Reaction;
+      reaction: string;
+      isPressed: boolean;
+    };

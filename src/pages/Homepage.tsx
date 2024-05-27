@@ -5,7 +5,7 @@ import { Live } from "@/features/liveblock";
 const Homepage = () => {
   return (
     <>
-      <div className="">
+      <div>
         <Live />
       </div>
     </>
