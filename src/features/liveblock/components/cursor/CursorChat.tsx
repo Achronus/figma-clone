@@ -1,5 +1,4 @@
 import { CursorMode, CursorState } from "@/types/liveblocks";
-import CursorSVG from "./CursorSVG";
 
 type CursorChatProps = {
   cursor: { x: number; y: number };
