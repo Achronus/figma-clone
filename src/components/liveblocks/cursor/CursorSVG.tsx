@@ -1,4 +1,8 @@
-function CursorSVG({ colour }: { colour: string }) {
+type CursorSvgProps = {
+  colour: string;
+};
+
+const CursorSVG = ({ colour }: CursorSvgProps) => {
   return (
     <svg
       className="relative"
@@ -15,6 +19,6 @@ function CursorSVG({ colour }: { colour: string }) {
       />
     </svg>
   );
-}
+};
 
 export default CursorSVG;

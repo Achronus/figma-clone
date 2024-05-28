@@ -1,4 +1,5 @@
 import { CursorMode, CursorState } from "@/types/liveblocks";
+import CursorSVG from "./CursorSVG";
 
 type CursorChatProps = {
   cursor: { x: number; y: number };
@@ -43,13 +44,14 @@ const CursorChat = ({
 
   return (
     <div
-      className="absolute top-2 left-5"
+      className="absolute top-0 left-0"
       style={{
         transform: `translateX(${cursor.x}px) translateY(${cursor.y}px)`,
       }}
     >
       {cursorState.mode === CursorMode.Chat && (
         <>
+          <CursorSVG colour="#000" />
           <div
             className="absolute left-2 top-5 bg-blue-500 px-4 py-2 text-sm leading-relaxed text-white rounded-2xl"
             onKeyUp={(e) => e.stopPropagation()}

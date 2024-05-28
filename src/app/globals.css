@@ -1,10 +1,8 @@
 @import "@liveblocks/react-comments/styles.css";
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 * {
   font-family: "Work Sans", sans-serif;
@@ -26,4 +24,8 @@
   .right-menu-item {
     @apply flex justify-between px-3 py-2 hover:bg-primary-grey-200 !important;
   }
+}
+
+.custom-cursor {
+  cursor: url("/assets/icons/cursor.svg"), auto;
 }
