@@ -27,5 +27,5 @@
 }
 
 .custom-cursor {
-  cursor: url("/assets/icons/cursor.svg"), auto;
+  cursor: url("/cursor.svg"), auto;
 }

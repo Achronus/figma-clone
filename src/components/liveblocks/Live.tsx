@@ -170,7 +170,7 @@ const Live = () => {
       onPointerUp={handlePointerUp}
       onPointerDown={handlePointerDown}
       onMouseDown={handleMouseDown}
-      className="h-screen w-full flex justify-center items-center text-center custom-cursor"
+      className="h-screen w-full flex justify-center items-center text-center"
     >
       <h1 className="text-2xl text-white">Liveblock Figma Clone</h1>
 
