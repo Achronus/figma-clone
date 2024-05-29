@@ -1,3 +1,4 @@
+import { shapesPath } from "@/constants";
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
@@ -49,49 +50,49 @@ export const getShapeInfo = (shapeType: string) => {
   switch (shapeType) {
     case "rect":
       return {
-        icon: "/assets/shapes/rectangle.svg",
+        icon: `${shapesPath}/rectangle.svg`,
         name: "Rectangle",
       };
 
     case "circle":
       return {
-        icon: "/assets/shapes/circle.svg",
+        icon: `${shapesPath}/circle.svg`,
         name: "Circle",
       };
 
     case "triangle":
       return {
-        icon: "/assets/shapes/triangle.svg",
+        icon: `${shapesPath}/triangle.svg`,
         name: "Triangle",
       };
 
     case "line":
       return {
-        icon: "/assets/shapes/line.svg",
+        icon: `${shapesPath}/line.svg`,
         name: "Line",
       };
 
     case "i-text":
       return {
-        icon: "/assets/shapes/text.svg",
+        icon: `${shapesPath}/text.svg`,
         name: "Text",
       };
 
     case "image":
       return {
-        icon: "/assets/shapes/image.svg",
+        icon: `${shapesPath}/image.svg`,
         name: "Image",
       };
 
     case "freeform":
       return {
-        icon: "/assets/shapes/freeform.svg",
+        icon: `${shapesPath}/freeform.svg`,
         name: "Free Drawing",
       };
 
     default:
       return {
-        icon: "/assets/shapes/rectangle.svg",
+        icon: `${shapesPath}/rectangle.svg`,
         name: shapeType,
       };
   }

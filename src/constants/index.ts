@@ -1,67 +1,74 @@
 export const COLORS = ["#DC2626", "#D97706", "#059669", "#7C3AED", "#DB2777"];
+export const shapesPath = "/shapes";
 
 export const shapeElements = [
   {
-    icon: "/assets/rectangle.svg",
+    icon: `${shapesPath}/rectangle.svg`,
     name: "Rectangle",
     value: "rectangle",
   },
   {
-    icon: "/assets/circle.svg",
+    icon: `${shapesPath}/circle.svg`,
     name: "Circle",
     value: "circle",
   },
   {
-    icon: "/assets/triangle.svg",
+    icon: `${shapesPath}/triangle.svg`,
     name: "Triangle",
     value: "triangle",
   },
   {
-    icon: "/assets/line.svg",
+    icon: `${shapesPath}/line.svg`,
     name: "Line",
     value: "line",
   },
   {
-    icon: "/assets/image.svg",
+    icon: `${shapesPath}/image.svg`,
     name: "Image",
     value: "image",
   },
   {
-    icon: "/assets/freeform.svg",
+    icon: `${shapesPath}/freeform.svg`,
     name: "Free Drawing",
     value: "freeform",
   },
 ];
 
-export const navElements = [
+export const navItems = [
   {
-    icon: "/assets/select.svg",
+    icon: `${shapesPath}/select.svg`,
     name: "Select",
     value: "select",
   },
   {
-    icon: "/assets/rectangle.svg",
+    icon: `${shapesPath}/rectangle.svg`,
     name: "Rectangle",
     value: shapeElements,
   },
   {
-    icon: "/assets/text.svg",
+    icon: `${shapesPath}/text.svg`,
     value: "text",
     name: "Text",
   },
   {
-    icon: "/assets/delete.svg",
+    icon: `${shapesPath}/delete.svg`,
     value: "delete",
     name: "Delete",
   },
   {
-    icon: "/assets/reset.svg",
+    icon: `${shapesPath}/reset.svg`,
     value: "reset",
     name: "Reset",
   },
   {
-    icon: "/assets/comments.svg",
+    icon: `${shapesPath}/comments.svg`,
     value: "comments",
     name: "Comments",
   },
 ];
+
+export const defaultNavElement = {
+  icon: `${shapesPath}/select.svg`,
+  name: "Select",
+  value: "select",
+};
