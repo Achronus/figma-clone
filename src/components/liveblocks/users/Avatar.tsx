@@ -13,7 +13,7 @@ const Avatar = ({ name, otherStyles }: AvatarProps) => {
 
   return (
     <div
-      className={`${styles.avatar} ${otherStyles} h-9 w-9`}
+      className={`${styles.avatar} ${otherStyles} h-9 w-9 !border-[3px]`}
       data-tooltip={name}
     >
       <Image
