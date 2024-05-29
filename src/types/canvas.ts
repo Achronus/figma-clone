@@ -87,3 +87,9 @@ export type ImageUpload = {
   shapeRef: React.MutableRefObject<fabric.Object | null>;
   syncShapeInStorage: (shape: fabric.Object) => void;
 };
+
+export type ActiveElement = {
+  name: string;
+  value: string;
+  icon: string;
+} | null;

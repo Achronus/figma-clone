@@ -8,7 +8,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
-import { ActiveElement } from "@/types/layout";
+import { ActiveElement } from "@/types/canvas";
 
 type ShapesMenuProps = {
   item: {
