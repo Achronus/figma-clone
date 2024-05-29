@@ -4,7 +4,7 @@ import { Live } from "@/components/liveblocks";
 import LeftSidebar from "@/layouts/LeftSidebar";
 import Navbar from "@/layouts/Navbar";
 import RightSidebar from "@/layouts/RightSidebar";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { fabric } from "fabric";
 import {
@@ -12,6 +12,7 @@ import {
   handleResize,
   initializeFabric,
 } from "@/lib/canvas";
+import { ActiveElement } from "@/types/canvas";
 
 export default function Page() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -19,6 +20,18 @@ export default function Page() {
   const shapeRef = useRef<fabric.Object | null>(null);
   const selectedShapeRef = useRef<string | null>(null);
   const isDrawing = useRef(false);
+
+  const [activeElement, setActiveElement] = useState<ActiveElement>({
+    name: "",
+    value: "",
+    icon: "",
+  });
+
+  const handleActiveElement = (element: ActiveElement) => {
+    setActiveElement(element);
+
+    selectedShapeRef.current = element?.value as string;
+  };
 
   useEffect(() => {
     const canvas = initializeFabric({ canvasRef, fabricRef });
@@ -41,7 +54,10 @@ export default function Page() {
 
   return (
     <main className="h-screen overflow-hidden">
-      <Navbar />
+      <Navbar
+        activeElement={activeElement}
+        handleActiveElement={handleActiveElement}
+      />
 
       <section className="flex h-full flex-row">
         <LeftSidebar />
