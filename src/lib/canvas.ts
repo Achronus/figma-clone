@@ -85,7 +85,7 @@ export const handleCanvasMouseDown = ({
 };
 
 // Draw shapes with different dimensions
-export const handleCanvaseMouseMove = ({
+export const handleCanvasMouseMove = ({
   options,
   canvas,
   isDrawing,

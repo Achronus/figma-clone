@@ -34,3 +34,16 @@ export type ReactionEvent = {
   y: number;
   value: string;
 };
+
+export type CursorChatProps = {
+  cursor: { x: number; y: number };
+  cursorState: CursorState;
+  setCursorState: (cursorState: CursorState) => void;
+  updateMyPresence: (
+    presence: Partial<{
+      cursor: { x: number; y: number };
+      cursorColor: string;
+      message: string;
+    }>
+  ) => void;
+};

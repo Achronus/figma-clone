@@ -1,18 +1,5 @@
-import { CursorMode, CursorState } from "@/types/liveblocks";
+import { CursorChatProps, CursorMode, CursorState } from "@/types/liveblocks";
 import CursorSVG from "./CursorSVG";
-
-type CursorChatProps = {
-  cursor: { x: number; y: number };
-  cursorState: CursorState;
-  setCursorState: (cursorState: CursorState) => void;
-  updateMyPresence: (
-    presence: Partial<{
-      cursor: { x: number; y: number };
-      cursorColor: string;
-      message: string;
-    }>
-  ) => void;
-};
 
 const CursorChat = ({
   cursor,
