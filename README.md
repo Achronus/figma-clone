@@ -1,4 +1,4 @@
-_Note: This project is a work in progress._
+_Project discontinued._
 
 # Figma Clone Project
 
